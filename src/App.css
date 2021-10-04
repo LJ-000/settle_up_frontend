@@ -1,38 +1,121 @@
+/* app colors
+#116466 dark green
+#d1e8e2 mint green 
+#d9b08c tan  */
+
+
 .App {
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #143555;
   text-align: center;
+  justify-content: center;
+  background-image: url("https://i.pinimg.com/originals/9f/29/ac/9f29acf713bcf78c4d6507220ee66955.jpg");
+  background-size: cover;
+  background-color: #E7E7E7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color:#116466;
+  height: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: Satisfy;
   color: white;
+  font-size: 35px;
+  font-weight: 500;
+
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  position: absolute;
+  left: -200px;
+  height: 100%;
+  width: 200px;
+  transition: left 0.3s ease-in-out;
+  background-color:white;
+  font-weight: 350;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar_toggle {
+  position: absolute;
+  align-content: center;
+  font-weight: 500;
+  font-size: 50px;
+  color:white;
+  background-color: #116466;
+  right: -45px;
+  height: 55px;
+  width: 50px;
+  margin-top: -213px;
+  border-radius: 10%;
+  border-width: small;
+  border-style: solid;
+  border-color: white;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.content.open {
+  left: 100px;
+}
+
+.navbar_1 {
+  font-family: Helvetica;
+  font-size: 25px;
+  font-weight: 650;
+  color: rgba(0, 0, 0, 0.603);
+}
+
+.homepage {
+  width: 50%;
+  align-content: center;
+  align-self: center;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding-bottom: 30px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.site_name {
+  color: #116466;
+  font-size: 80px;
+  font-weight: 550;
+  font-family: Satisfy;
+}
+
+.homepage_1 {
+  color:rgba(0, 0, 0, 0.603);
+  font-size: 30px;
+}
+
+.homepage_2 {
+  color:rgba(0, 0, 0, 0.603);
+  font-size: 30px;
+}
+
+.homepage_button {
+  font-family: Helevitca;
+  font-size: 20px;
+  color: white;
+  background-color: #116466;
+  border-radius: 7px;
 }

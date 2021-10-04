@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from './components/Header';
+import SideDrawer from './components/SideDrawer';
 import Home from './components/Home';
 import Login from './components/Login';
 import Transactions from './components/Transactions';
@@ -9,10 +10,13 @@ import PayBill from './components/PayBill';
 
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
         <Header/>
+        <SideDrawer/>
+
           <Switch>
 
             <Route exact path={["/", "/home"]}>
