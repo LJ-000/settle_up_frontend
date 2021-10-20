@@ -59,6 +59,12 @@ handleErrors = () => {
 render() {
     const {username, password} = this.state 
 return (
+    <>
+    <div className="login_page">
+    <br></br>               
+    <br></br>               
+    <br></br>               
+    <br></br>               
       <div className="login_form">
         <h1>Log In</h1>     
         <br></br>   
@@ -83,13 +89,18 @@ return (
 <button className="form_button" placeholder="submit" type="submit">
             Log In
           </button> 
-          <br></br>               
+          <br></br>  
+          <br></br>                            
           <div className="signup_route">
-            or <Link to='/signup'>Sign Up</Link>
+            Already a member? <Link to='/signup'>Sign Up</Link>
           </div>
-          
+          <br></br>   
+
          </form>
       </div>
+      </div>
+        </>
+
     );
   }
 }

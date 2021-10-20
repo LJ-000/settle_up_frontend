@@ -62,10 +62,15 @@ handleErrors = () => {
 render() {
     const {username, password, password_confirmation} = this.state
 return (
-      <div className="signup_form">
-        <h1>Sign Up</h1>     
-        <br></br>      
-<form onSubmit={this.handleSubmit}>
+<div className="signup_page">
+    <br></br>               
+    <br></br>               
+    <br></br>               
+    <br></br>               
+<div className="signup_form">
+        <h1>Sign Up</h1>
+        <h5>Use Email Address as Username</h5>     
+    <form onSubmit={this.handleSubmit}>
           <input className="username_form"
             placeholder="username"
             type="text"
@@ -94,9 +99,9 @@ return (
           <button className="form_button" placeholder="submit" type="submit">
             Sign Up
           </button>
-      
         </form>
-      </div>
+    </div>
+</div>
     );
   }
 }

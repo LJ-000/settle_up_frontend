@@ -8,10 +8,51 @@ import SignUp from './components/SignUp';
 import Transactions from './components/Transactions';
 import SplitTransactions from './components/SplitTransactions';
 import PayBill from './components/PayBill';
+import { Component } from 'react';
+import axios from 'axios'
 
 
-function App() {
+class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = { 
+      isLoggedIn: false,
+      user: {}
+     };
+  };
+
+  componentDidMount() {
+    this.loginStatus()
+  }
+  loginStatus = () => {
+      axios.get('http://localhost:3001/login', 
+      {withCredentials: true})    
+  .then(response => {
+        if (response.data.logged_in) {
+          this.handleLogin(response)
+        } else {
+          this.handleLogout()
+        }
+      })
+      .catch(error => console.log('api errors:', error))
+    }
+  
+
+  handleLogin = (data) => {
+    this.setState({
+      isLoggedIn: true,
+      user: data.user
+    })
+  }
+handleLogout = () => {
+    this.setState({
+    isLoggedIn: false,
+    user: {}
+    })
+  }
+
+  render() {
   return (
     <div className="App">
       <BrowserRouter>
@@ -47,7 +88,9 @@ function App() {
           </Switch>
       </BrowserRouter>
     </div>
-  );
+  
+    );
+  }
 }
 
 export default App;
