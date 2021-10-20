@@ -5,7 +5,6 @@ class Transactions extends Component {
     render() {
     return (
         <div>View All Transactions</div>
-
         )
     }
 }

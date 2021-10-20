@@ -4,6 +4,7 @@ import Header from './components/Header';
 import SideDrawer from './components/SideDrawer';
 import Home from './components/Home';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
 import Transactions from './components/Transactions';
 import SplitTransactions from './components/SplitTransactions';
 import PayBill from './components/PayBill';
@@ -25,6 +26,10 @@ function App() {
 
             <Route exact path={["/login"]}>
                 <Login/>
+            </Route> 
+
+            <Route exact path={["/signup"]}>
+                <SignUp/>
             </Route> 
 
             <Route exact path={["/transactions"]}>

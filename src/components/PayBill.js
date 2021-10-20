@@ -5,7 +5,6 @@ class PayBill extends Component {
     render() {
     return (
         <div>Pay Bill</div>
-
         )
     }
 }

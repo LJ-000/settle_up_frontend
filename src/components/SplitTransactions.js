@@ -5,7 +5,6 @@ class SplitTransactions extends Component {
     render() {
     return (
         <div>Split Transactions</div>
-
         )
     }
 }

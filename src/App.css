@@ -82,6 +82,7 @@
   font-size: 25px;
   font-weight: 650;
   color: rgba(0, 0, 0, 0.603);
+  text-decoration: none;
 }
 
 .homepage {
@@ -118,4 +119,30 @@
   color: white;
   background-color: #116466;
   border-radius: 7px;
+}
+
+.signup_form {
+  width: 50%;
+  align-content: center;
+  align-self: center;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 50px;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 3px;
+}
+
+.login_form {
+  width: 50%;
+  align-content: center;
+  align-self: center;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 50px;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 3px;
+}
+
+.signup_route {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

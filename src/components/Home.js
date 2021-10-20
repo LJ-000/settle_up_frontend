@@ -16,7 +16,6 @@ class Home extends Component {
             <button className="homepage_button">Get Started</button>
         </p>
         </>
-
         )
     }
 }
